@@ -1,18 +1,18 @@
 [
     {
-        "file": "/fonts/KGShadowoftheDay.ttf",
+        "file": "fonts/KGShadowoftheDay.ttf",
         "mimeType": "application/x-truetype-font"
     },
     {
-        "file": "/fonts/KGWhattheTeacherWants.ttf",
+        "file": "fonts/KGWhattheTeacherWants.ttf",
         "mimeType": "application/x-truetype-font"
     },
     {
-        "file": "/fonts/Lato-Black.ttf",
+        "file": "fonts/Lato-Black.ttf",
         "mimeType": "application/x-truetype-font"
     },
     {
-        "file": "/fonts/Lato-BlackItalic.ttf",
+        "file": "fonts/Lato-BlackItalic.ttf",
         "mimeType": "application/x-truetype-font"
     }
 ]
