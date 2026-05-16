@@ -1,0 +1,3 @@
+# Whisper intermediate STT files — never commit, only LRCs.
+Music/**/*.en.whisper.srt
+Music/**/*.whisper.srt
