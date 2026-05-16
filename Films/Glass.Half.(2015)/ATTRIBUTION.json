@@ -1,0 +1,16 @@
+{
+  "scope": "film",
+  "film": {
+    "title": "Glass Half",
+    "year": 2015,
+    "director": "Beorn Leonard",
+    "producer": "Blender Foundation / Blender Institute",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://studio.blender.org/films/glass-half/",
+    "source_alt": null,
+    "copyright": "(c) copyright Blender Foundation / Blender Institute",
+    "modifications": "transcoded to HLS with custom bitrate ladder; sprite thumbnail strip generated; subtitle tracks extracted; font assets extracted",
+    "self_hosted_path": "Films/Glass.Half.(2015)"
+  }
+}
