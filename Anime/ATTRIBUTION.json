@@ -1,0 +1,28 @@
+{
+  "scope": "library",
+  "library_overview": "Shows in this folder are commercial Japanese anime included solely as test material for the NoMercy player's ASS subtitle and embedded-font handling. They are NOT open-licensed content and are NOT for redistribution. Removal requests from rights holders will be honored on contact.",
+  "shows": [
+    {
+      "title": "No-Rin",
+      "year": 2014,
+      "studio": "Silver Link",
+      "license": "All rights reserved — commercial copyrighted work",
+      "license_url": null,
+      "source": "https://en.wikipedia.org/wiki/No-Rin",
+      "copyright": "(c) Shirow Shiratori / Silver Link / No-Rin Production Committee",
+      "notice": "This content is included in the NoMercy media repository as test material for the player's ASS subtitle and embedded-font handling. It is NOT distributed under a permissive license. The original work is copyrighted by Silver Link and its rights holders. Removal request from rights holders honored on contact.",
+      "self_hosted_path": "Anime/No-Rin.(2014)"
+    },
+    {
+      "title": "Rail Wars!",
+      "year": 2014,
+      "studio": "Passione",
+      "license": "All rights reserved — commercial copyrighted work",
+      "license_url": null,
+      "source": "https://en.wikipedia.org/wiki/Rail_Wars!",
+      "copyright": "(c) Takumi Toyoda / Passione / Rail Wars! Production Committee",
+      "notice": "This content is included in the NoMercy media repository as test material for the player's ASS subtitle and embedded-font handling. It is NOT distributed under a permissive license. The original work is copyrighted by Passione and its rights holders. Removal request from rights holders honored on contact.",
+      "self_hosted_path": "Anime/Rail.Wars!.(2014)"
+    }
+  ]
+}

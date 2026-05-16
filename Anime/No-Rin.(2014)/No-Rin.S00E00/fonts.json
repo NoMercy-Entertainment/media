@@ -1,0 +1,18 @@
+[
+    {
+        "file": "fonts/KGShadowoftheDay.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/KGWhattheTeacherWants.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/Lato-Black.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/Lato-BlackItalic.ttf",
+        "mimeType": "application/x-truetype-font"
+    }
+]
