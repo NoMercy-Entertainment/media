@@ -1,5 +1,53 @@
 [
     {
+        "file": "fonts/AGBookRounded-Bold.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/AGRounded-Book.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/ARIAL.TTF",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/BSOD.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/BettysHand-Plain.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/BolideRegular.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/Corbel-Bold.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/Corbel.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/DKCrayonCrumble.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/Formal436BT-Regular.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/HeyGorgeous.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/JanieHmkBold.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
         "file": "fonts/KGShadowoftheDay.ttf",
         "mimeType": "application/x-truetype-font"
     },
@@ -8,11 +56,31 @@
         "mimeType": "application/x-truetype-font"
     },
     {
+        "file": "fonts/KozukaMinchoProH.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
         "file": "fonts/Lato-Black.ttf",
         "mimeType": "application/x-truetype-font"
     },
     {
         "file": "fonts/Lato-BlackItalic.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/Leander.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/LightmorningMod.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/SetFiretotheRain.ttf",
+        "mimeType": "application/x-truetype-font"
+    },
+    {
+        "file": "fonts/Shear15_A.ttf",
         "mimeType": "application/x-truetype-font"
     }
 ]
