@@ -1,0 +1,16 @@
+{
+  "scope": "film",
+  "film": {
+    "title": "Tears of Steel",
+    "year": 2012,
+    "director": "Ian Hubert",
+    "producer": "Blender Foundation / Blender Institute (Mango Open Movie Project); produced by Ton Roosendaal",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://mango.blender.org/",
+    "source_alt": "https://studio.blender.org/films/tears-of-steel/",
+    "copyright": "(c) copyright Blender Foundation | www.tearsofsteel.org",
+    "modifications": "transcoded to HLS with custom bitrate ladder; sprite thumbnail strip generated; subtitle tracks extracted; font assets extracted",
+    "self_hosted_path": "Films/Tears.of.Steel.(2012)"
+  }
+}
