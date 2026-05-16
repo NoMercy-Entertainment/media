@@ -1,0 +1,25 @@
+# Attribution — HoliznaCC0: Power Pop!
+
+- **Artist:** HoliznaCC0
+- **Album:** Power Pop!
+- **Year:** 2022
+- **Released:** May 25, 2022
+- **License:** CC0 1.0 Universal (Public Domain)
+- **License URL:** https://creativecommons.org/publicdomain/zero/1.0/
+- **Source:** https://freemusicarchive.org/music/holiznacc0/power-pop
+- **Modifications:** none (downloaded as-is); per-track artwork copied from album cover (no per-track art on FMA)
+- **Tracks:**
+  - 01 Funky Pop
+  - 02 Retro Soundtrack
+  - 03 Back In The 80s
+  - 04 transcendental earth people
+  - 05 Happy Dance
+  - 06 A Small Town On Pluto
+  - 07 Day Dreams
+  - 08 Dear Mr Super Computer
+  - 09 Mutant Club
+  - 10 Love Love Love
+  - 11 Retro Synths
+  - 12 50 Over The Speed Limit
+  - 13 Drama
+  - 14 Bouncing

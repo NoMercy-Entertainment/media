@@ -1,0 +1,29 @@
+{
+  "scope": "album",
+  "album": {
+    "artist": "HoliznaCC0",
+    "album": "Power Pop!",
+    "year": 2022,
+    "released": "2022-05-25",
+    "license": "CC0 1.0 Universal (Public Domain)",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "source": "https://freemusicarchive.org/music/holiznacc0/power-pop",
+    "modifications": "per-track artwork copied from album cover",
+    "tracks": [
+      { "n": 1,  "title": "Funky Pop" },
+      { "n": 2,  "title": "Retro Soundtrack" },
+      { "n": 3,  "title": "Back In The 80s" },
+      { "n": 4,  "title": "transcendental earth people" },
+      { "n": 5,  "title": "Happy Dance" },
+      { "n": 6,  "title": "A Small Town On Pluto" },
+      { "n": 7,  "title": "Day Dreams" },
+      { "n": 8,  "title": "Dear Mr Super Computer" },
+      { "n": 9,  "title": "Mutant Club" },
+      { "n": 10, "title": "Love Love Love" },
+      { "n": 11, "title": "Retro Synths" },
+      { "n": 12, "title": "50 Over The Speed Limit" },
+      { "n": 13, "title": "Drama" },
+      { "n": 14, "title": "Bouncing" }
+    ]
+  }
+}
