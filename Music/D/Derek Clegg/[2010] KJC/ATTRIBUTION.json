@@ -1,0 +1,27 @@
+{
+  "scope": "album",
+  "album": {
+    "artist": "Derek Clegg",
+    "album": "KJC",
+    "year": 2010,
+    "released": "2010-01-22",
+    "license": "CC BY-NC-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "source": "https://freemusicarchive.org/music/Derek_Clegg/kjc",
+    "modifications": "per-track artwork extracted from embedded ID3 APIC frames",
+    "tracks": [
+      { "n": 1,  "title": "Thaw You Out" },
+      { "n": 2,  "title": "Hope" },
+      { "n": 3,  "title": "The Good Die Young" },
+      { "n": 4,  "title": "Home" },
+      { "n": 5,  "title": "Friends" },
+      { "n": 6,  "title": "Quirky Little Love Song" },
+      { "n": 7,  "title": "Honest" },
+      { "n": 8,  "title": "Our Old Place" },
+      { "n": 9,  "title": "Found" },
+      { "n": 10, "title": "Adore" },
+      { "n": 11, "title": "Cannot Change" },
+      { "n": 12, "title": "KJC" }
+    ]
+  }
+}

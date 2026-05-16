@@ -1,0 +1,23 @@
+# Attribution — Derek Clegg: KJC
+
+- **Artist:** Derek Clegg
+- **Album:** KJC
+- **Year:** 2010
+- **Released:** January 22, 2010
+- **License:** CC BY-NC-SA 4.0
+- **License URL:** https://creativecommons.org/licenses/by-nc-sa/4.0/
+- **Source:** https://freemusicarchive.org/music/Derek_Clegg/kjc
+- **Modifications:** none (downloaded as-is); per-track artwork extracted from embedded ID3 APIC frames
+- **Tracks:**
+  - 01 Thaw You Out
+  - 02 Hope
+  - 03 The Good Die Young
+  - 04 Home
+  - 05 Friends
+  - 06 Quirky Little Love Song
+  - 07 Honest
+  - 08 Our Old Place
+  - 09 Found
+  - 10 Adore
+  - 11 Cannot Change
+  - 12 KJC
