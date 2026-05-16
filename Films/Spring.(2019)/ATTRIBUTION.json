@@ -1,0 +1,16 @@
+{
+  "scope": "film",
+  "film": {
+    "title": "Spring",
+    "year": 2019,
+    "director": "Andy Goralczyk",
+    "producer": "Blender Foundation / Blender Institute",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/films/spring/",
+    "source_alt": null,
+    "copyright": "(c) copyright Blender Foundation / Blender Institute",
+    "modifications": "transcoded to HLS with custom bitrate ladder; sprite thumbnail strip generated; subtitle tracks extracted; font assets extracted",
+    "self_hosted_path": "Films/Spring.(2019)"
+  }
+}
