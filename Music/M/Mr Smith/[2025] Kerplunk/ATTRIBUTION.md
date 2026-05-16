@@ -1,0 +1,40 @@
+# Attribution — Mr Smith: Kerplunk
+
+- **Artist:** Mr Smith
+- **Album:** Kerplunk
+- **Year:** 2025
+- **Released:** January 2, 2025
+- **License:** CC BY 4.0 / CC BY-SA 4.0 (mixed per track)
+- **License URL:** https://creativecommons.org/licenses/by/4.0/ / https://creativecommons.org/licenses/by-sa/4.0/
+- **Source:** https://freemusicarchive.org/music/mr-smith/kerplunk
+- **Modifications:** none (downloaded as-is); per-track artwork copied from album cover (no per-track art on FMA)
+- **Note:** This is a living collection on FMA; these 28 tracks are the snapshot downloaded. FMA has additional tracks.
+- **Tracks:**
+  - 01 Chang One
+  - 02 Sherpa Foot
+  - 03 Ridgeway Drive
+  - 04 Da Fixx
+  - 05 Ricochet
+  - 06 Kerplunk
+  - 07 Bulletproof
+  - 08 Satellite
+  - 09 So What
+  - 10 Fredsong
+  - 11 Down Time
+  - 12 So Serious
+  - 13 Dirty Honey
+  - 14 The Wire
+  - 15 Dark and Early
+  - 16 Fast Horse
+  - 17 Sneaking Around
+  - 18 Vegas Baby
+  - 19 Slo Bop
+  - 20 Patience Pt 1
+  - 21 Juno
+  - 22 Mustang
+  - 23 Patience Pt 2
+  - 24 Black Letter
+  - 25 Drift
+  - 26 Pushed
+  - 27 Head Bop
+  - 28 Stacked

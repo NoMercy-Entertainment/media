@@ -1,0 +1,43 @@
+{
+  "scope": "album",
+  "album": {
+    "artist": "Mr Smith",
+    "album": "Kerplunk",
+    "year": 2025,
+    "released": "2025-01-02",
+    "license": "CC BY 4.0 / CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://freemusicarchive.org/music/mr-smith/kerplunk",
+    "modifications": "per-track artwork copied from album cover; living collection on FMA — these 28 tracks are the download snapshot",
+    "tracks": [
+      { "n": 1,  "title": "Chang One" },
+      { "n": 2,  "title": "Sherpa Foot" },
+      { "n": 3,  "title": "Ridgeway Drive" },
+      { "n": 4,  "title": "Da Fixx" },
+      { "n": 5,  "title": "Ricochet" },
+      { "n": 6,  "title": "Kerplunk" },
+      { "n": 7,  "title": "Bulletproof" },
+      { "n": 8,  "title": "Satellite" },
+      { "n": 9,  "title": "So What" },
+      { "n": 10, "title": "Fredsong" },
+      { "n": 11, "title": "Down Time" },
+      { "n": 12, "title": "So Serious" },
+      { "n": 13, "title": "Dirty Honey" },
+      { "n": 14, "title": "The Wire" },
+      { "n": 15, "title": "Dark and Early" },
+      { "n": 16, "title": "Fast Horse" },
+      { "n": 17, "title": "Sneaking Around" },
+      { "n": 18, "title": "Vegas Baby" },
+      { "n": 19, "title": "Slo Bop" },
+      { "n": 20, "title": "Patience Pt 1" },
+      { "n": 21, "title": "Juno" },
+      { "n": 22, "title": "Mustang" },
+      { "n": 23, "title": "Patience Pt 2" },
+      { "n": 24, "title": "Black Letter" },
+      { "n": 25, "title": "Drift" },
+      { "n": 26, "title": "Pushed" },
+      { "n": 27, "title": "Head Bop" },
+      { "n": 28, "title": "Stacked" }
+    ]
+  }
+}
