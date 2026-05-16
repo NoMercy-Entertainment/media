@@ -1,0 +1,23 @@
+# Attribution — The Kyoto Connection: Wake Up
+
+- **Artist:** The Kyoto Connection
+- **Album:** Wake Up
+- **Year:** 2013
+- **License:** CC BY-NC-SA 3.0
+- **License URL:** https://creativecommons.org/licenses/by-nc-sa/3.0/
+- **Source:** https://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957
+- **Modifications:** none (downloaded as-is)
+- **Tracks:**
+  - 01 Intro - The Way Of Waking Up (feat. Alan Watts)
+  - 02 Geisha
+  - 03 Voyage I - Waterfall
+  - 04 The Music In You
+  - 05 The Calm Before The Storm
+  - 06 No Pain- No Gain
+  - 07 Voyage II - Satori
+  - 08 Reveal the Magic
+  - 09 Hachiko (The Faithtful Dog)
+  - 10 Wake Up
+  - 11 Voyage III - The Space Between Us
+  - 12 Ume No Kaori (feat. Sunawai)
+  - 13 Outro - Totally Here and Now (feat. Alan Watts)

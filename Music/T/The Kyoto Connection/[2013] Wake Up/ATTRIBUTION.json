@@ -1,0 +1,28 @@
+{
+  "scope": "album",
+  "album": {
+    "artist": "The Kyoto Connection",
+    "album": "Wake Up",
+    "year": 2013,
+    "released": "2013",
+    "license": "CC BY-NC-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "source": "https://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957",
+    "modifications": "none",
+    "tracks": [
+      { "n": 1,  "title": "Intro - The Way Of Waking Up (feat. Alan Watts)" },
+      { "n": 2,  "title": "Geisha" },
+      { "n": 3,  "title": "Voyage I - Waterfall" },
+      { "n": 4,  "title": "The Music In You" },
+      { "n": 5,  "title": "The Calm Before The Storm" },
+      { "n": 6,  "title": "No Pain- No Gain" },
+      { "n": 7,  "title": "Voyage II - Satori" },
+      { "n": 8,  "title": "Reveal the Magic" },
+      { "n": 9,  "title": "Hachiko (The Faithtful Dog)" },
+      { "n": 10, "title": "Wake Up" },
+      { "n": 11, "title": "Voyage III - The Space Between Us" },
+      { "n": 12, "title": "Ume No Kaori (feat. Sunawai)" },
+      { "n": 13, "title": "Outro - Totally Here and Now (feat. Alan Watts)" }
+    ]
+  }
+}
