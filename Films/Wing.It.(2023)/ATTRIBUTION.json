@@ -1,0 +1,16 @@
+{
+  "scope": "film",
+  "film": {
+    "title": "Wing It!",
+    "year": 2023,
+    "director": "Blender Studio team (15th Blender Open Movie)",
+    "producer": "Blender Foundation / Blender Studio",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://studio.blender.org/films/wing-it/",
+    "source_alt": null,
+    "copyright": "(c) copyright Blender Foundation / Blender Studio",
+    "modifications": "transcoded to HLS with custom bitrate ladder; sprite thumbnail strip generated; subtitle tracks extracted; font assets extracted",
+    "self_hosted_path": "Films/Wing.It.(2023)"
+  }
+}
