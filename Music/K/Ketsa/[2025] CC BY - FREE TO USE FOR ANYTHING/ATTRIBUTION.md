@@ -1,0 +1,50 @@
+# Attribution — Ketsa: CC BY: FREE TO USE FOR ANYTHING
+
+- **Artist:** Ketsa
+- **Album:** CC BY: FREE TO USE FOR ANYTHING
+- **Year:** 2025
+- **Released:** March 7, 2025
+- **License:** CC BY 4.0
+- **License URL:** https://creativecommons.org/licenses/by/4.0/
+- **Source:** https://freemusicarchive.org/music/Ketsa/cc-by-free-to-use-for-anything
+- **Modifications:** none (downloaded as-is); per-track artwork copied from album cover (no per-track art on FMA)
+- **Note:** This is a living collection on FMA; these 38 tracks are the snapshot downloaded. FMA may have more tracks.
+- **Tracks:**
+  - 01 Where Dreams Drift
+  - 02 Saviour Above
+  - 03 Night Flow Day Grow
+  - 04 The Road
+  - 05 Surroundings are Green
+  - 06 Soul Sync
+  - 07 Always Faithful
+  - 08 Importance
+  - 09 Good Feel
+  - 10 Too Late
+  - 11 Longer Wait
+  - 12 Tide Turns
+  - 13 Soul Trap
+  - 14 What It Feels Like
+  - 15 Doobie
+  - 16 Trench Work
+  - 17 Inside Dead
+  - 18 Here For You
+  - 19 My Deal
+  - 20 Ten out of Ten
+  - 21 Still Dreams
+  - 22 Rockets
+  - 23 Around the Corner
+  - 24 A Little Faith
+  - 25 Bright State
+  - 26 Off Days
+  - 27 The Road 2
+  - 28 New Starts Beat
+  - 29 Funk Trunk
+  - 30 See Us
+  - 31 Her Memory Fading
+  - 32 Jazz For The Soul
+  - 33 Vision 2
+  - 34 Too Fly
+  - 35 Drifting Space Jazz
+  - 36 Soul Syrup
+  - 37 Turning Up
+  - 38 Vision
