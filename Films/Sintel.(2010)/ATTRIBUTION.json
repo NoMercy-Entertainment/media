@@ -1,0 +1,15 @@
+{
+  "scope": "film",
+  "film": {
+    "title": "Sintel",
+    "year": 2010,
+    "director": "Colin Levy",
+    "producer": "Blender Foundation (Durian Open Movie Project); produced by Ton Roosendaal",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://durian.blender.org/",
+    "source_alt": "https://studio.blender.org/films/sintel/",
+    "copyright": "(c) copyright Blender Foundation | www.sintel.org",
+    "modifications": "transcoded to HLS with custom HDR bitrate ladder; sprite thumbnail strip generated; subtitle tracks extracted; font assets extracted"
+  }
+}
