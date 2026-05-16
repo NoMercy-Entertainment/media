@@ -1,0 +1,26 @@
+# Attribution — legacyAlli: legacyAlli 2025
+
+- **Artist:** legacyAlli
+- **Album:** legacyAlli 2025
+- **Year:** 2025
+- **Released:** January 2, 2025
+- **License:** CC BY-NC-ND 4.0 / CC BY 4.0 / CC BY-ND 4.0 / CC BY-NC 4.0 (mixed per track)
+- **License URL:** https://creativecommons.org/licenses/by-nc-nd/4.0/
+- **Source:** https://freemusicarchive.org/music/legacyalli/legacyalli-2025
+- **Modifications:** artist tag normalised from "Allison Gordon Mastropieri - legacyalli" to "legacyAlli"; per-track artwork copied from album cover
+- **Note:** This is a living collection on FMA; these 14 tracks are the snapshot downloaded. FMA has additional tracks.
+- **Tracks:**
+  - 01 Ricochet
+  - 02 Because Its Spring
+  - 03 Its Just Happening Too Fast
+  - 04 Its Just Happening Too Fast 2
+  - 05 Chanson Douce (Smooth Song)
+  - 06 My Brain Is Rotting
+  - 07 Interlude
+  - 08 Breezing
+  - 09 Holding Hands
+  - 10 You Dont Have To Go It Alone
+  - 11 Free Flowing
+  - 12 Carlotta
+  - 13 Stealthy
+  - 14 Interrogation Bond-Style

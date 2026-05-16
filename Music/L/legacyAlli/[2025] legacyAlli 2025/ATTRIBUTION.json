@@ -1,0 +1,29 @@
+{
+  "scope": "album",
+  "album": {
+    "artist": "legacyAlli",
+    "album": "legacyAlli 2025",
+    "year": 2025,
+    "released": "2025-01-02",
+    "license": "CC BY-NC-ND 4.0 / CC BY 4.0 / CC BY-ND 4.0 / CC BY-NC 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "source": "https://freemusicarchive.org/music/legacyalli/legacyalli-2025",
+    "modifications": "artist tag normalised from 'Allison Gordon Mastropieri - legacyalli' to 'legacyAlli'; per-track artwork copied from album cover; living collection — these 14 tracks are the download snapshot",
+    "tracks": [
+      { "n": 1,  "title": "Ricochet" },
+      { "n": 2,  "title": "Because Its Spring" },
+      { "n": 3,  "title": "Its Just Happening Too Fast" },
+      { "n": 4,  "title": "Its Just Happening Too Fast 2" },
+      { "n": 5,  "title": "Chanson Douce (Smooth Song)" },
+      { "n": 6,  "title": "My Brain Is Rotting" },
+      { "n": 7,  "title": "Interlude" },
+      { "n": 8,  "title": "Breezing" },
+      { "n": 9,  "title": "Holding Hands" },
+      { "n": 10, "title": "You Dont Have To Go It Alone" },
+      { "n": 11, "title": "Free Flowing" },
+      { "n": 12, "title": "Carlotta" },
+      { "n": 13, "title": "Stealthy" },
+      { "n": 14, "title": "Interrogation Bond-Style" }
+    ]
+  }
+}
