@@ -1,0 +1,16 @@
+{
+  "scope": "film",
+  "film": {
+    "title": "Caminandes: Gran Dillama",
+    "year": 2013,
+    "director": "Pablo Vazquez",
+    "producer": "Blender Foundation",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "http://www.caminandes.com/",
+    "source_alt": "https://studio.blender.org/films/caminandes-2/",
+    "copyright": "(c) copyright Blender Foundation",
+    "modifications": "transcoded to HLS with custom bitrate ladder; sprite thumbnail strip generated; subtitle tracks extracted; font assets extracted",
+    "self_hosted_path": "Films/Caminandes.Gran.Dillama.(2013)"
+  }
+}
