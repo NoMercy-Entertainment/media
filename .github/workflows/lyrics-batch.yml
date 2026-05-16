@@ -1,0 +1,402 @@
+name: Lyrics batch (whisper medium)
+
+# Manual-only batch job. For every Music/**/*.mp3 without a sibling .lrc,
+# transcribe with nomercy-ffmpeg's whisper filter (medium model), convert
+# the SRT cues to LRC, and commit the results.
+#
+# Targets Fillz's beast-unit runner: 60-core / 192 GB. We parallelise N
+# ffmpeg processes via xargs to use the cores, since whisper inside one
+# ffmpeg call is single-threaded for our purposes.
+
+on:
+  workflow_dispatch:
+    inputs:
+      ffmpeg_release:
+        description: 'nomercy-ffmpeg release tag (e.g. v1.0.35; "latest" uses the newest release)'
+        required: true
+        default: 'latest'
+      whisper_queue:
+        description: 'whisper filter queue duration in seconds (30 confirmed-good for medium)'
+        required: true
+        default: '30'
+      parallel_jobs:
+        description: 'how many ffmpeg processes to run in parallel'
+        required: true
+        default: '8'
+      dry_run:
+        description: 'if true, transcribe but do NOT commit/push results'
+        required: true
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+concurrency:
+  group: lyrics-batch
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  transcribe:
+    runs-on: [self-hosted, beast-unit]
+    timeout-minutes: 720
+
+    env:
+      WHISPER_MODEL_URL: https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin
+      WHISPER_MODEL_SHA256: a31f25a435c4f4c6577ccd883479273e5851372fc87ca7af9e663f47997f09ab
+      RUNNER_TOOLCACHE: ${{ runner.tool_cache }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT }}
+
+      - name: Show host info
+        run: |
+          set -eu
+          echo "uname: $(uname -a)"
+          echo "nproc: $(nproc)"
+          echo "free:" && free -h || true
+          echo "cwd: $(pwd)"
+          echo "mp3-count: $(find Music -type f -name '*.mp3' | wc -l)"
+          echo "lrc-count: $(find Music -type f -name '*.lrc' | wc -l)"
+
+      - name: Cache nomercy-ffmpeg binary
+        id: cache-ffmpeg
+        uses: actions/cache@v4
+        with:
+          path: .lyrics-batch/ffmpeg
+          key: nomercy-ffmpeg-linux-x86_64-${{ inputs.ffmpeg_release }}
+
+      - name: Install nomercy-ffmpeg
+        if: steps.cache-ffmpeg.outputs.cache-hit != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: |
+          set -euo pipefail
+          mkdir -p .lyrics-batch/ffmpeg
+          cd .lyrics-batch/ffmpeg
+
+          tag='${{ inputs.ffmpeg_release }}'
+          if [ "$tag" = "latest" ]; then
+            tag=$(gh release view --repo NoMercy-Entertainment/nomercy-ffmpeg --json tagName --jq .tagName)
+            echo "Resolved latest tag: $tag"
+          fi
+
+          gh release download "$tag" \
+            --repo NoMercy-Entertainment/nomercy-ffmpeg \
+            --pattern '*linux-x86_64*.tar.gz' \
+            --output ffmpeg.tar.gz
+
+          tar -xzf ffmpeg.tar.gz
+          rm ffmpeg.tar.gz
+
+          # Find the ffmpeg binary inside whatever folder structure the
+          # tarball uses, and symlink it to ./bin/ffmpeg.
+          binary=$(find . -type f -name ffmpeg -perm -u+x | head -n 1)
+          if [ -z "$binary" ]; then
+            echo "ERROR: ffmpeg binary not found in tarball" >&2
+            ls -laR .
+            exit 1
+          fi
+          mkdir -p bin
+          ln -sf "$(realpath "$binary")" bin/ffmpeg
+          ./bin/ffmpeg -version | head -n 1
+          ./bin/ffmpeg -hide_banner -h filter=whisper | grep -q 'whisper' && echo "whisper filter present"
+
+      - name: Cache whisper medium model
+        id: cache-model
+        uses: actions/cache@v4
+        with:
+          path: .lyrics-batch/models/ggml-medium.bin
+          key: whisper-ggml-medium-${{ env.WHISPER_MODEL_SHA256 }}
+
+      - name: Download whisper medium model
+        if: steps.cache-model.outputs.cache-hit != 'true'
+        run: |
+          set -euo pipefail
+          mkdir -p .lyrics-batch/models
+          curl -fL --retry 5 --retry-delay 10 \
+            -o .lyrics-batch/models/ggml-medium.bin \
+            "$WHISPER_MODEL_URL"
+          actual=$(sha256sum .lyrics-batch/models/ggml-medium.bin | awk '{print $1}')
+          if [ "$actual" != "$WHISPER_MODEL_SHA256" ]; then
+            echo "ERROR: medium model sha256 mismatch" >&2
+            echo "  expected: $WHISPER_MODEL_SHA256" >&2
+            echo "  actual:   $actual" >&2
+            exit 1
+          fi
+          echo "Model verified ($actual)"
+
+      - name: Write transcode + LRC convert script
+        run: |
+          set -euo pipefail
+          mkdir -p .lyrics-batch/bin .lyrics-batch/logs .lyrics-batch/state
+
+          cat > .lyrics-batch/bin/srt_to_lrc.py <<'PY'
+          #!/usr/bin/env python3
+          """Convert a whisper SRT to an LRC file. Detects instrumental-only
+          tracks (no cues at all, or only musical-marker cues like [Music]) and
+          writes a single [00:00.00]Instrumental stub for those.
+          """
+          import re
+          import sys
+          from pathlib import Path
+
+          # Whisper SRT timecode: HH:MM:SS,mmm  or  HH:MM:SS.mmm
+          TIME_RE = re.compile(
+              r"(\d{2}):(\d{2}):(\d{2})[,.](\d{3})\s*-->\s*"
+              r"(\d{2}):(\d{2}):(\d{2})[,.](\d{3})"
+          )
+
+          # Lines that are pure musical markers (whisper emits these when there
+          # is no speech) — we strip them when classifying instrumental tracks.
+          MARKER_RE = re.compile(
+              r"^\s*[\[(♪♪♫]?\s*"
+              r"(music|instrumental|applause|silence|upbeat music|gentle music|"
+              r"piano|guitar|drumbeat|laughter)"
+              r"\s*[\])♪♪♫]?\s*$",
+              re.IGNORECASE,
+          )
+
+
+          def parse_srt(text: str):
+              cues = []
+              lines = text.splitlines()
+              i = 0
+              while i < len(lines):
+                  match = TIME_RE.search(lines[i])
+                  if not match:
+                      i += 1
+                      continue
+                  hours, minutes, seconds, millis = map(int, match.group(1, 2, 3, 4))
+                  start = hours * 3600 + minutes * 60 + seconds + millis / 1000.0
+                  i += 1
+                  body = []
+                  while (
+                      i < len(lines)
+                      and lines[i].strip()
+                      and not TIME_RE.search(lines[i])
+                  ):
+                      body.append(lines[i].strip())
+                      i += 1
+                  text_joined = " ".join(body).strip()
+                  cues.append((start, text_joined))
+              return cues
+
+
+          def lrc_timestamp(seconds: float) -> str:
+              minutes = int(seconds // 60)
+              remainder = seconds - minutes * 60
+              return f"[{minutes:02d}:{remainder:05.2f}]"
+
+
+          def is_instrumental(cues):
+              speech_cues = [
+                  text for _, text in cues
+                  if text and not MARKER_RE.match(text)
+              ]
+              if not speech_cues:
+                  return True
+              # Very low signal — only one or two short marker-adjacent cues
+              joined = " ".join(speech_cues).strip()
+              if len(joined) < 8:
+                  return True
+              return False
+
+
+          def main():
+              if len(sys.argv) != 3:
+                  print("usage: srt_to_lrc.py INPUT.srt OUTPUT.lrc", file=sys.stderr)
+                  sys.exit(2)
+              srt_path = Path(sys.argv[1])
+              lrc_path = Path(sys.argv[2])
+              text = srt_path.read_text(encoding="utf-8", errors="replace")
+              cues = parse_srt(text)
+
+              if is_instrumental(cues):
+                  output = "[00:00.00]Instrumental\n"
+                  classification = "instrumental"
+              else:
+                  output_lines = [
+                      f"{lrc_timestamp(start)}{text_joined}"
+                      for start, text_joined in cues
+                      if text_joined
+                  ]
+                  output = "\n".join(output_lines) + "\n"
+                  classification = "lyrics"
+
+              lrc_path.write_text(output, encoding="utf-8")
+              print(classification)
+
+
+          if __name__ == "__main__":
+              main()
+          PY
+          chmod +x .lyrics-batch/bin/srt_to_lrc.py
+
+          cat > .lyrics-batch/bin/transcribe_one.sh <<'BASH'
+          #!/usr/bin/env bash
+          # transcribe_one.sh MP3_PATH
+          # Runs whisper on a single MP3, converts to LRC, deletes intermediate SRT.
+          # Writes one line to .lyrics-batch/logs/results.tsv:
+          #   status<TAB>classification<TAB>elapsed_s<TAB>mp3<TAB>note
+          set -uo pipefail
+
+          mp3="$1"
+          ffmpeg="$LYRICS_FFMPEG"
+          model="$LYRICS_MODEL"
+          queue="$LYRICS_QUEUE"
+          state_dir="$LYRICS_STATE_DIR"
+          log_dir="$LYRICS_LOG_DIR"
+          tmp_dir="$LYRICS_TMP_DIR"
+
+          mkdir -p "$state_dir" "$log_dir" "$tmp_dir"
+
+          base="${mp3%.mp3}"
+          lrc="$base.lrc"
+          srt="$tmp_dir/$(basename "$base").$$.srt"
+
+          if [ -f "$lrc" ]; then
+            printf 'skip\texisting\t0\t%s\t\n' "$mp3" >> "$log_dir/results.tsv"
+            exit 0
+          fi
+
+          # Escape ':' for libavfilter option parsing
+          model_esc=$(printf '%s' "$model" | sed 's/:/\\\\:/g')
+          srt_esc=$(printf '%s' "$srt" | sed 's/:/\\\\:/g')
+          filter="whisper=model=${model_esc}:language=auto:queue=${queue}:destination=${srt_esc}:format=srt:use_gpu=false"
+
+          start=$(date +%s)
+          err_log="$log_dir/$(basename "$base").$$.err"
+          "$ffmpeg" -hide_banner -loglevel warning -nostats \
+            -i "$mp3" -map 0:a:0 -vn -af "$filter" -f null - \
+            > /dev/null 2> "$err_log"
+          rc=$?
+          elapsed=$(( $(date +%s) - start ))
+
+          if [ $rc -ne 0 ] || [ ! -s "$srt" ]; then
+            printf 'fail\trc=%d\t%d\t%s\t%s\n' "$rc" "$elapsed" "$mp3" \
+              "$(head -n 1 "$err_log" 2>/dev/null | tr -d '\t')" \
+              >> "$log_dir/results.tsv"
+            rm -f "$srt"
+            exit 0
+          fi
+
+          classification=$(python3 "$LYRICS_SCRIPT_DIR/srt_to_lrc.py" "$srt" "$lrc" || echo "convert_error")
+          rm -f "$srt" "$err_log"
+          printf 'ok\t%s\t%d\t%s\t\n' "$classification" "$elapsed" "$mp3" \
+            >> "$log_dir/results.tsv"
+          BASH
+          chmod +x .lyrics-batch/bin/transcribe_one.sh
+
+      - name: Run whisper across all MP3s
+        env:
+          LYRICS_FFMPEG: ${{ github.workspace }}/.lyrics-batch/ffmpeg/bin/ffmpeg
+          LYRICS_MODEL: ${{ github.workspace }}/.lyrics-batch/models/ggml-medium.bin
+          LYRICS_QUEUE: ${{ inputs.whisper_queue }}
+          LYRICS_STATE_DIR: ${{ github.workspace }}/.lyrics-batch/state
+          LYRICS_LOG_DIR: ${{ github.workspace }}/.lyrics-batch/logs
+          LYRICS_TMP_DIR: ${{ github.workspace }}/.lyrics-batch/tmp
+          LYRICS_SCRIPT_DIR: ${{ github.workspace }}/.lyrics-batch/bin
+        run: |
+          set -euo pipefail
+          rm -f .lyrics-batch/logs/results.tsv
+          mkdir -p .lyrics-batch/logs .lyrics-batch/tmp .lyrics-batch/state
+
+          mapfile -t MP3S < <(find Music -type f -name '*.mp3' | sort)
+          echo "discovered ${#MP3S[@]} mp3s"
+
+          # Filter out those that already have sibling .lrc
+          todo=()
+          for mp3 in "${MP3S[@]}"; do
+            if [ ! -f "${mp3%.mp3}.lrc" ]; then
+              todo+=("$mp3")
+            fi
+          done
+          echo "${#todo[@]} files need transcription"
+          if [ "${#todo[@]}" -eq 0 ]; then
+            echo "Nothing to do."
+            exit 0
+          fi
+
+          printf '%s\n' "${todo[@]}" > .lyrics-batch/state/todo.list
+
+          # Parallelism: xargs -P. Whisper inside one ffmpeg call uses ~1 core
+          # heavily so 8 in parallel saturates 8 cores; tune via input.
+          xargs -a .lyrics-batch/state/todo.list -d '\n' \
+            -n 1 -P "${{ inputs.parallel_jobs }}" \
+            .lyrics-batch/bin/transcribe_one.sh
+
+          echo "--- results.tsv summary ---"
+          awk -F'\t' '{print $1}' .lyrics-batch/logs/results.tsv | sort | uniq -c
+
+      - name: Build run summary
+        run: |
+          set -euo pipefail
+          summary=.lyrics-batch/logs/lyrics-run-summary.txt
+          {
+            echo "lyrics-batch run summary"
+            echo "  ffmpeg_release: ${{ inputs.ffmpeg_release }}"
+            echo "  whisper_queue:  ${{ inputs.whisper_queue }}"
+            echo "  parallel_jobs:  ${{ inputs.parallel_jobs }}"
+            echo "  dry_run:        ${{ inputs.dry_run }}"
+            echo
+            echo "Status counts:"
+            awk -F'\t' '{print "  "$1}' .lyrics-batch/logs/results.tsv \
+              | sort | uniq -c | sort -rn
+            echo
+            echo "Classification counts (ok rows only):"
+            awk -F'\t' '$1=="ok" {print "  "$2}' .lyrics-batch/logs/results.tsv \
+              | sort | uniq -c | sort -rn
+            echo
+            echo "Failures:"
+            awk -F'\t' '$1=="fail" {print "  "$4" :: "$5}' .lyrics-batch/logs/results.tsv \
+              || true
+            echo
+            echo "Top 10 slowest (seconds):"
+            awk -F'\t' '$1=="ok" {print $3"\t"$4}' .lyrics-batch/logs/results.tsv \
+              | sort -rn | head -n 10
+          } > "$summary"
+          cat "$summary"
+
+      - name: Upload run summary artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lyrics-run-summary
+          path: |
+            .lyrics-batch/logs/lyrics-run-summary.txt
+            .lyrics-batch/logs/results.tsv
+
+      - name: Commit + push generated LRC files
+        if: inputs.dry_run != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PAT }}
+        run: |
+          set -euo pipefail
+
+          # Stage every new/changed .lrc under Music/ — don't sweep up
+          # anything else accidentally generated in the working tree.
+          git config user.name  'nomercy-bot'
+          git config user.email 'bot@nomercy.tv'
+
+          # `git add` followed by check via `git diff --cached --quiet`
+          # exits 1 when there ARE staged changes — invert with `|| true`.
+          git add 'Music/**/*.lrc'
+
+          if git diff --cached --quiet; then
+            echo "No new .lrc files staged — nothing to commit."
+            exit 0
+          fi
+
+          # Count the staged files for the commit message.
+          staged_count=$(git diff --cached --name-only | grep -c '\.lrc$' || true)
+
+          git commit -m "feat(music): whisper-generated lyrics for ${staged_count} tracks via beast-unit batch"
+          git push origin HEAD:master
