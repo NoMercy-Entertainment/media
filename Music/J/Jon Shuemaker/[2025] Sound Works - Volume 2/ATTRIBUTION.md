@@ -1,0 +1,21 @@
+# Attribution — Jon Shuemaker: Sound Works: Volume 2
+
+- **Artist:** Jon Shuemaker
+- **Album:** Sound Works: Volume 2
+- **Year:** 2025
+- **Released:** May 4, 2025
+- **License:** CC BY 4.0
+- **License URL:** https://creativecommons.org/licenses/by/4.0/
+- **Source:** https://freemusicarchive.org/music/jon-shuemaker/sound-works-volume-2
+- **Modifications:** none (downloaded as-is); per-track artwork extracted from embedded ID3 APIC frames
+- **Tracks:**
+  - 01 Soundwork XI
+  - 02 Soundwork XII
+  - 03 Soundwork XIII
+  - 04 Soundwork XIV
+  - 05 Soundwork XV
+  - 06 Soundwork XVI
+  - 07 Soundwork XVII
+  - 08 Soundwork XVIII
+  - 09 Soundwork XIX
+  - 10 Soundwork XX

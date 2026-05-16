@@ -1,0 +1,25 @@
+{
+  "scope": "album",
+  "album": {
+    "artist": "Jon Shuemaker",
+    "album": "Sound Works: Volume 2",
+    "year": 2025,
+    "released": "2025-05-04",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://freemusicarchive.org/music/jon-shuemaker/sound-works-volume-2",
+    "modifications": "per-track artwork extracted from embedded ID3 APIC frames",
+    "tracks": [
+      { "n": 1,  "title": "Soundwork XI" },
+      { "n": 2,  "title": "Soundwork XII" },
+      { "n": 3,  "title": "Soundwork XIII" },
+      { "n": 4,  "title": "Soundwork XIV" },
+      { "n": 5,  "title": "Soundwork XV" },
+      { "n": 6,  "title": "Soundwork XVI" },
+      { "n": 7,  "title": "Soundwork XVII" },
+      { "n": 8,  "title": "Soundwork XVIII" },
+      { "n": 9,  "title": "Soundwork XIX" },
+      { "n": 10, "title": "Soundwork XX" }
+    ]
+  }
+}
