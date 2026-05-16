@@ -1,0 +1,15 @@
+{
+  "scope": "film",
+  "film": {
+    "title": "Big Buck Bunny",
+    "year": 2008,
+    "director": "Sacha Goedegebure",
+    "producer": "Blender Foundation (Peach Open Movie Project)",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "source": "https://peach.blender.org/",
+    "source_alt": "https://studio.blender.org/films/big-buck-bunny/",
+    "copyright": "(c) copyright 2008, Blender Foundation / www.bigbuckbunny.org",
+    "modifications": "transcoded to HLS with custom bitrate ladder; sprite thumbnail strip generated; subtitle tracks extracted; font assets extracted"
+  }
+}
