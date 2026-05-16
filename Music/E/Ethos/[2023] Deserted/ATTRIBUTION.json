@@ -1,0 +1,25 @@
+{
+  "scope": "album",
+  "album": {
+    "artist": "Ethos",
+    "album": "Deserted",
+    "year": 2023,
+    "released": "2023-10-05",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source": "https://freemusicarchive.org/music/ethos/deserted",
+    "modifications": "per-track artwork copied from album cover; FMA has added tracks since download — these 10 are the snapshot",
+    "tracks": [
+      { "n": 1,  "title": "Night of Betrayal" },
+      { "n": 2,  "title": "Shimmer in Thought" },
+      { "n": 3,  "title": "Southern Skies" },
+      { "n": 4,  "title": "The Battle for Madrid II" },
+      { "n": 5,  "title": "The Wit of Axis" },
+      { "n": 6,  "title": "Every Day to Play" },
+      { "n": 7,  "title": "Scapes of Dreams" },
+      { "n": 8,  "title": "Blues and Tooth" },
+      { "n": 9,  "title": "Something About the West" },
+      { "n": 10, "title": "Vedu" }
+    ]
+  }
+}

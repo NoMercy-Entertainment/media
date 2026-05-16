@@ -1,0 +1,22 @@
+# Attribution — Ethos: Deserted
+
+- **Artist:** Ethos
+- **Album:** Deserted
+- **Year:** 2023
+- **Released:** October 5, 2023
+- **License:** CC BY 4.0
+- **License URL:** https://creativecommons.org/licenses/by/4.0/
+- **Source:** https://freemusicarchive.org/music/ethos/deserted
+- **Modifications:** none (downloaded as-is); per-track artwork copied from album cover (no per-track art on FMA)
+- **Note:** FMA has added tracks to this album since download; these 10 are the snapshot downloaded.
+- **Tracks:**
+  - 01 Night of Betrayal
+  - 02 Shimmer in Thought
+  - 03 Southern Skies
+  - 04 The Battle for Madrid II
+  - 05 The Wit of Axis
+  - 06 Every Day to Play
+  - 07 Scapes of Dreams
+  - 08 Blues and Tooth
+  - 09 Something About the West
+  - 10 Vedu
