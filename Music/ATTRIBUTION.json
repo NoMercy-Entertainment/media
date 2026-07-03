@@ -10,21 +10,60 @@
       "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
       "source": "https://freemusicarchive.org/music/The_Kyoto_Connection/Wake_Up_1957",
       "modifications": "none",
-      "self_hosted_path": "Music/T/The Kyoto Connection/[2013] Wake Up",
+      "self_hosted_path": "Music/T/The.Kyoto.Connection/Wake.Up.(2013)",
       "tracks": [
-        { "n": 1,  "title": "Intro - The Way Of Waking Up (feat. Alan Watts)" },
-        { "n": 2,  "title": "Geisha" },
-        { "n": 3,  "title": "Voyage I - Waterfall" },
-        { "n": 4,  "title": "The Music In You" },
-        { "n": 5,  "title": "The Calm Before The Storm" },
-        { "n": 6,  "title": "No Pain- No Gain" },
-        { "n": 7,  "title": "Voyage II - Satori" },
-        { "n": 8,  "title": "Reveal the Magic" },
-        { "n": 9,  "title": "Hachiko (The Faithtful Dog)" },
-        { "n": 10, "title": "Wake Up" },
-        { "n": 11, "title": "Voyage III - The Space Between Us" },
-        { "n": 12, "title": "Ume No Kaori (feat. Sunawai)" },
-        { "n": 13, "title": "Outro - Totally Here and Now (feat. Alan Watts)" }
+        {
+          "n": 1,
+          "title": "Intro - The Way Of Waking Up (feat. Alan Watts)"
+        },
+        {
+          "n": 2,
+          "title": "Geisha"
+        },
+        {
+          "n": 3,
+          "title": "Voyage I - Waterfall"
+        },
+        {
+          "n": 4,
+          "title": "The Music In You"
+        },
+        {
+          "n": 5,
+          "title": "The Calm Before The Storm"
+        },
+        {
+          "n": 6,
+          "title": "No Pain- No Gain"
+        },
+        {
+          "n": 7,
+          "title": "Voyage II - Satori"
+        },
+        {
+          "n": 8,
+          "title": "Reveal the Magic"
+        },
+        {
+          "n": 9,
+          "title": "Hachiko (The Faithtful Dog)"
+        },
+        {
+          "n": 10,
+          "title": "Wake Up"
+        },
+        {
+          "n": 11,
+          "title": "Voyage III - The Space Between Us"
+        },
+        {
+          "n": 12,
+          "title": "Ume No Kaori (feat. Sunawai)"
+        },
+        {
+          "n": 13,
+          "title": "Outro - Totally Here and Now (feat. Alan Watts)"
+        }
       ]
     },
     {
@@ -36,20 +75,56 @@
       "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
       "source": "https://freemusicarchive.org/music/Derek_Clegg/kjc",
       "modifications": "per-track artwork extracted from embedded ID3 APIC frames",
-      "self_hosted_path": "Music/D/Derek Clegg/[2010] KJC",
+      "self_hosted_path": "Music/D/Derek.Clegg/KJC.(2010)",
       "tracks": [
-        { "n": 1,  "title": "Thaw You Out" },
-        { "n": 2,  "title": "Hope" },
-        { "n": 3,  "title": "The Good Die Young" },
-        { "n": 4,  "title": "Home" },
-        { "n": 5,  "title": "Friends" },
-        { "n": 6,  "title": "Quirky Little Love Song" },
-        { "n": 7,  "title": "Honest" },
-        { "n": 8,  "title": "Our Old Place" },
-        { "n": 9,  "title": "Found" },
-        { "n": 10, "title": "Adore" },
-        { "n": 11, "title": "Cannot Change" },
-        { "n": 12, "title": "KJC" }
+        {
+          "n": 1,
+          "title": "Thaw You Out"
+        },
+        {
+          "n": 2,
+          "title": "Hope"
+        },
+        {
+          "n": 3,
+          "title": "The Good Die Young"
+        },
+        {
+          "n": 4,
+          "title": "Home"
+        },
+        {
+          "n": 5,
+          "title": "Friends"
+        },
+        {
+          "n": 6,
+          "title": "Quirky Little Love Song"
+        },
+        {
+          "n": 7,
+          "title": "Honest"
+        },
+        {
+          "n": 8,
+          "title": "Our Old Place"
+        },
+        {
+          "n": 9,
+          "title": "Found"
+        },
+        {
+          "n": 10,
+          "title": "Adore"
+        },
+        {
+          "n": 11,
+          "title": "Cannot Change"
+        },
+        {
+          "n": 12,
+          "title": "KJC"
+        }
       ]
     },
     {
@@ -61,46 +136,160 @@
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "source": "https://freemusicarchive.org/music/Ketsa/cc-by-free-to-use-for-anything",
       "modifications": "per-track artwork copied from album cover; living collection on FMA — these 38 tracks are the download snapshot",
-      "self_hosted_path": "Music/K/Ketsa/[2025] CC BY - FREE TO USE FOR ANYTHING",
+      "self_hosted_path": "Music/K/Ketsa/CC.BY.FREE.TO.USE.FOR.ANYTHING.(2025)",
       "tracks": [
-        { "n": 1,  "title": "Where Dreams Drift" },
-        { "n": 2,  "title": "Saviour Above" },
-        { "n": 3,  "title": "Night Flow Day Grow" },
-        { "n": 4,  "title": "The Road" },
-        { "n": 5,  "title": "Surroundings are Green" },
-        { "n": 6,  "title": "Soul Sync" },
-        { "n": 7,  "title": "Always Faithful" },
-        { "n": 8,  "title": "Importance" },
-        { "n": 9,  "title": "Good Feel" },
-        { "n": 10, "title": "Too Late" },
-        { "n": 11, "title": "Longer Wait" },
-        { "n": 12, "title": "Tide Turns" },
-        { "n": 13, "title": "Soul Trap" },
-        { "n": 14, "title": "What It Feels Like" },
-        { "n": 15, "title": "Doobie" },
-        { "n": 16, "title": "Trench Work" },
-        { "n": 17, "title": "Inside Dead" },
-        { "n": 18, "title": "Here For You" },
-        { "n": 19, "title": "My Deal" },
-        { "n": 20, "title": "Ten out of Ten" },
-        { "n": 21, "title": "Still Dreams" },
-        { "n": 22, "title": "Rockets" },
-        { "n": 23, "title": "Around the Corner" },
-        { "n": 24, "title": "A Little Faith" },
-        { "n": 25, "title": "Bright State" },
-        { "n": 26, "title": "Off Days" },
-        { "n": 27, "title": "The Road 2" },
-        { "n": 28, "title": "New Starts Beat" },
-        { "n": 29, "title": "Funk Trunk" },
-        { "n": 30, "title": "See Us" },
-        { "n": 31, "title": "Her Memory Fading" },
-        { "n": 32, "title": "Jazz For The Soul" },
-        { "n": 33, "title": "Vision 2" },
-        { "n": 34, "title": "Too Fly" },
-        { "n": 35, "title": "Drifting Space Jazz" },
-        { "n": 36, "title": "Soul Syrup" },
-        { "n": 37, "title": "Turning Up" },
-        { "n": 38, "title": "Vision" }
+        {
+          "n": 1,
+          "title": "Where Dreams Drift"
+        },
+        {
+          "n": 2,
+          "title": "Saviour Above"
+        },
+        {
+          "n": 3,
+          "title": "Night Flow Day Grow"
+        },
+        {
+          "n": 4,
+          "title": "The Road"
+        },
+        {
+          "n": 5,
+          "title": "Surroundings are Green"
+        },
+        {
+          "n": 6,
+          "title": "Soul Sync"
+        },
+        {
+          "n": 7,
+          "title": "Always Faithful"
+        },
+        {
+          "n": 8,
+          "title": "Importance"
+        },
+        {
+          "n": 9,
+          "title": "Good Feel"
+        },
+        {
+          "n": 10,
+          "title": "Too Late"
+        },
+        {
+          "n": 11,
+          "title": "Longer Wait"
+        },
+        {
+          "n": 12,
+          "title": "Tide Turns"
+        },
+        {
+          "n": 13,
+          "title": "Soul Trap"
+        },
+        {
+          "n": 14,
+          "title": "What It Feels Like"
+        },
+        {
+          "n": 15,
+          "title": "Doobie"
+        },
+        {
+          "n": 16,
+          "title": "Trench Work"
+        },
+        {
+          "n": 17,
+          "title": "Inside Dead"
+        },
+        {
+          "n": 18,
+          "title": "Here For You"
+        },
+        {
+          "n": 19,
+          "title": "My Deal"
+        },
+        {
+          "n": 20,
+          "title": "Ten out of Ten"
+        },
+        {
+          "n": 21,
+          "title": "Still Dreams"
+        },
+        {
+          "n": 22,
+          "title": "Rockets"
+        },
+        {
+          "n": 23,
+          "title": "Around the Corner"
+        },
+        {
+          "n": 24,
+          "title": "A Little Faith"
+        },
+        {
+          "n": 25,
+          "title": "Bright State"
+        },
+        {
+          "n": 26,
+          "title": "Off Days"
+        },
+        {
+          "n": 27,
+          "title": "The Road 2"
+        },
+        {
+          "n": 28,
+          "title": "New Starts Beat"
+        },
+        {
+          "n": 29,
+          "title": "Funk Trunk"
+        },
+        {
+          "n": 30,
+          "title": "See Us"
+        },
+        {
+          "n": 31,
+          "title": "Her Memory Fading"
+        },
+        {
+          "n": 32,
+          "title": "Jazz For The Soul"
+        },
+        {
+          "n": 33,
+          "title": "Vision 2"
+        },
+        {
+          "n": 34,
+          "title": "Too Fly"
+        },
+        {
+          "n": 35,
+          "title": "Drifting Space Jazz"
+        },
+        {
+          "n": 36,
+          "title": "Soul Syrup"
+        },
+        {
+          "n": 37,
+          "title": "Turning Up"
+        },
+        {
+          "n": 38,
+          "title": "Vision"
+        }
       ]
     },
     {
@@ -112,36 +301,120 @@
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "source": "https://freemusicarchive.org/music/mr-smith/kerplunk",
       "modifications": "per-track artwork copied from album cover; living collection on FMA — these 28 tracks are the download snapshot",
-      "self_hosted_path": "Music/M/Mr Smith/[2025] Kerplunk",
+      "self_hosted_path": "Music/M/Mr.Smith/Kerplunk.(2025)",
       "tracks": [
-        { "n": 1,  "title": "Chang One" },
-        { "n": 2,  "title": "Sherpa Foot" },
-        { "n": 3,  "title": "Ridgeway Drive" },
-        { "n": 4,  "title": "Da Fixx" },
-        { "n": 5,  "title": "Ricochet" },
-        { "n": 6,  "title": "Kerplunk" },
-        { "n": 7,  "title": "Bulletproof" },
-        { "n": 8,  "title": "Satellite" },
-        { "n": 9,  "title": "So What" },
-        { "n": 10, "title": "Fredsong" },
-        { "n": 11, "title": "Down Time" },
-        { "n": 12, "title": "So Serious" },
-        { "n": 13, "title": "Dirty Honey" },
-        { "n": 14, "title": "The Wire" },
-        { "n": 15, "title": "Dark and Early" },
-        { "n": 16, "title": "Fast Horse" },
-        { "n": 17, "title": "Sneaking Around" },
-        { "n": 18, "title": "Vegas Baby" },
-        { "n": 19, "title": "Slo Bop" },
-        { "n": 20, "title": "Patience Pt 1" },
-        { "n": 21, "title": "Juno" },
-        { "n": 22, "title": "Mustang" },
-        { "n": 23, "title": "Patience Pt 2" },
-        { "n": 24, "title": "Black Letter" },
-        { "n": 25, "title": "Drift" },
-        { "n": 26, "title": "Pushed" },
-        { "n": 27, "title": "Head Bop" },
-        { "n": 28, "title": "Stacked" }
+        {
+          "n": 1,
+          "title": "Chang One"
+        },
+        {
+          "n": 2,
+          "title": "Sherpa Foot"
+        },
+        {
+          "n": 3,
+          "title": "Ridgeway Drive"
+        },
+        {
+          "n": 4,
+          "title": "Da Fixx"
+        },
+        {
+          "n": 5,
+          "title": "Ricochet"
+        },
+        {
+          "n": 6,
+          "title": "Kerplunk"
+        },
+        {
+          "n": 7,
+          "title": "Bulletproof"
+        },
+        {
+          "n": 8,
+          "title": "Satellite"
+        },
+        {
+          "n": 9,
+          "title": "So What"
+        },
+        {
+          "n": 10,
+          "title": "Fredsong"
+        },
+        {
+          "n": 11,
+          "title": "Down Time"
+        },
+        {
+          "n": 12,
+          "title": "So Serious"
+        },
+        {
+          "n": 13,
+          "title": "Dirty Honey"
+        },
+        {
+          "n": 14,
+          "title": "The Wire"
+        },
+        {
+          "n": 15,
+          "title": "Dark and Early"
+        },
+        {
+          "n": 16,
+          "title": "Fast Horse"
+        },
+        {
+          "n": 17,
+          "title": "Sneaking Around"
+        },
+        {
+          "n": 18,
+          "title": "Vegas Baby"
+        },
+        {
+          "n": 19,
+          "title": "Slo Bop"
+        },
+        {
+          "n": 20,
+          "title": "Patience Pt 1"
+        },
+        {
+          "n": 21,
+          "title": "Juno"
+        },
+        {
+          "n": 22,
+          "title": "Mustang"
+        },
+        {
+          "n": 23,
+          "title": "Patience Pt 2"
+        },
+        {
+          "n": 24,
+          "title": "Black Letter"
+        },
+        {
+          "n": 25,
+          "title": "Drift"
+        },
+        {
+          "n": 26,
+          "title": "Pushed"
+        },
+        {
+          "n": 27,
+          "title": "Head Bop"
+        },
+        {
+          "n": 28,
+          "title": "Stacked"
+        }
       ]
     },
     {
@@ -153,22 +426,64 @@
       "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
       "source": "https://freemusicarchive.org/music/legacyalli/legacyalli-2025",
       "modifications": "artist tag normalised from 'Allison Gordon Mastropieri - legacyalli' to 'legacyAlli'; per-track artwork copied from album cover; living collection — these 14 tracks are the download snapshot",
-      "self_hosted_path": "Music/L/legacyAlli/[2025] legacyAlli 2025",
+      "self_hosted_path": "Music/L/legacyAlli/legacyAlli.2025.(2025)",
       "tracks": [
-        { "n": 1,  "title": "Ricochet" },
-        { "n": 2,  "title": "Because Its Spring" },
-        { "n": 3,  "title": "Its Just Happening Too Fast" },
-        { "n": 4,  "title": "Its Just Happening Too Fast 2" },
-        { "n": 5,  "title": "Chanson Douce (Smooth Song)" },
-        { "n": 6,  "title": "My Brain Is Rotting" },
-        { "n": 7,  "title": "Interlude" },
-        { "n": 8,  "title": "Breezing" },
-        { "n": 9,  "title": "Holding Hands" },
-        { "n": 10, "title": "You Dont Have To Go It Alone" },
-        { "n": 11, "title": "Free Flowing" },
-        { "n": 12, "title": "Carlotta" },
-        { "n": 13, "title": "Stealthy" },
-        { "n": 14, "title": "Interrogation Bond-Style" }
+        {
+          "n": 1,
+          "title": "Ricochet"
+        },
+        {
+          "n": 2,
+          "title": "Because Its Spring"
+        },
+        {
+          "n": 3,
+          "title": "Its Just Happening Too Fast"
+        },
+        {
+          "n": 4,
+          "title": "Its Just Happening Too Fast 2"
+        },
+        {
+          "n": 5,
+          "title": "Chanson Douce (Smooth Song)"
+        },
+        {
+          "n": 6,
+          "title": "My Brain Is Rotting"
+        },
+        {
+          "n": 7,
+          "title": "Interlude"
+        },
+        {
+          "n": 8,
+          "title": "Breezing"
+        },
+        {
+          "n": 9,
+          "title": "Holding Hands"
+        },
+        {
+          "n": 10,
+          "title": "You Dont Have To Go It Alone"
+        },
+        {
+          "n": 11,
+          "title": "Free Flowing"
+        },
+        {
+          "n": 12,
+          "title": "Carlotta"
+        },
+        {
+          "n": 13,
+          "title": "Stealthy"
+        },
+        {
+          "n": 14,
+          "title": "Interrogation Bond-Style"
+        }
       ]
     },
     {
@@ -180,14 +495,32 @@
       "license_url": "https://creativecommons.org/licenses/by-nd/4.0/",
       "source": "https://freemusicarchive.org/music/bent-wyre/if-only-life-was-this-easy-volume-5-the-beat-misdirect",
       "modifications": "per-track artwork copied from album cover",
-      "self_hosted_path": "Music/B/bent wyre/[2025] If Only Life Was This Easy Volume 5 - The Beat Misdirect",
+      "self_hosted_path": "Music/B/bent.wyre/If.Only.Life.Was.This.Easy.Volume.5.The.Beat.Misdirect.(2025)",
       "tracks": [
-        { "n": 1, "title": "Ants Of The Beat" },
-        { "n": 2, "title": "Beat of Trespass" },
-        { "n": 3, "title": "Prequel To The Beat" },
-        { "n": 4, "title": "Silent Beat Parliament" },
-        { "n": 5, "title": "Swim To The Beat" },
-        { "n": 6, "title": "Atmospheric Disturbances Part 5" }
+        {
+          "n": 1,
+          "title": "Ants Of The Beat"
+        },
+        {
+          "n": 2,
+          "title": "Beat of Trespass"
+        },
+        {
+          "n": 3,
+          "title": "Prequel To The Beat"
+        },
+        {
+          "n": 4,
+          "title": "Silent Beat Parliament"
+        },
+        {
+          "n": 5,
+          "title": "Swim To The Beat"
+        },
+        {
+          "n": 6,
+          "title": "Atmospheric Disturbances Part 5"
+        }
       ]
     },
     {
@@ -199,18 +532,48 @@
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "source": "https://freemusicarchive.org/music/ethos/deserted",
       "modifications": "per-track artwork copied from album cover; FMA has added tracks since download — these 10 are the snapshot",
-      "self_hosted_path": "Music/E/Ethos/[2023] Deserted",
+      "self_hosted_path": "Music/E/Ethos/Deserted.(2023)",
       "tracks": [
-        { "n": 1,  "title": "Night of Betrayal" },
-        { "n": 2,  "title": "Shimmer in Thought" },
-        { "n": 3,  "title": "Southern Skies" },
-        { "n": 4,  "title": "The Battle for Madrid II" },
-        { "n": 5,  "title": "The Wit of Axis" },
-        { "n": 6,  "title": "Every Day to Play" },
-        { "n": 7,  "title": "Scapes of Dreams" },
-        { "n": 8,  "title": "Blues and Tooth" },
-        { "n": 9,  "title": "Something About the West" },
-        { "n": 10, "title": "Vedu" }
+        {
+          "n": 1,
+          "title": "Night of Betrayal"
+        },
+        {
+          "n": 2,
+          "title": "Shimmer in Thought"
+        },
+        {
+          "n": 3,
+          "title": "Southern Skies"
+        },
+        {
+          "n": 4,
+          "title": "The Battle for Madrid II"
+        },
+        {
+          "n": 5,
+          "title": "The Wit of Axis"
+        },
+        {
+          "n": 6,
+          "title": "Every Day to Play"
+        },
+        {
+          "n": 7,
+          "title": "Scapes of Dreams"
+        },
+        {
+          "n": 8,
+          "title": "Blues and Tooth"
+        },
+        {
+          "n": 9,
+          "title": "Something About the West"
+        },
+        {
+          "n": 10,
+          "title": "Vedu"
+        }
       ]
     },
     {
@@ -222,22 +585,64 @@
       "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "source": "https://freemusicarchive.org/music/holiznacc0/power-pop",
       "modifications": "per-track artwork copied from album cover",
-      "self_hosted_path": "Music/H/HoliznaCC0/[2022] Power Pop!",
+      "self_hosted_path": "Music/H/HoliznaCC0/Power.Pop!.(2022)",
       "tracks": [
-        { "n": 1,  "title": "Funky Pop" },
-        { "n": 2,  "title": "Retro Soundtrack" },
-        { "n": 3,  "title": "Back In The 80s" },
-        { "n": 4,  "title": "transcendental earth people" },
-        { "n": 5,  "title": "Happy Dance" },
-        { "n": 6,  "title": "A Small Town On Pluto" },
-        { "n": 7,  "title": "Day Dreams" },
-        { "n": 8,  "title": "Dear Mr Super Computer" },
-        { "n": 9,  "title": "Mutant Club" },
-        { "n": 10, "title": "Love Love Love" },
-        { "n": 11, "title": "Retro Synths" },
-        { "n": 12, "title": "50 Over The Speed Limit" },
-        { "n": 13, "title": "Drama" },
-        { "n": 14, "title": "Bouncing" }
+        {
+          "n": 1,
+          "title": "Funky Pop"
+        },
+        {
+          "n": 2,
+          "title": "Retro Soundtrack"
+        },
+        {
+          "n": 3,
+          "title": "Back In The 80s"
+        },
+        {
+          "n": 4,
+          "title": "transcendental earth people"
+        },
+        {
+          "n": 5,
+          "title": "Happy Dance"
+        },
+        {
+          "n": 6,
+          "title": "A Small Town On Pluto"
+        },
+        {
+          "n": 7,
+          "title": "Day Dreams"
+        },
+        {
+          "n": 8,
+          "title": "Dear Mr Super Computer"
+        },
+        {
+          "n": 9,
+          "title": "Mutant Club"
+        },
+        {
+          "n": 10,
+          "title": "Love Love Love"
+        },
+        {
+          "n": 11,
+          "title": "Retro Synths"
+        },
+        {
+          "n": 12,
+          "title": "50 Over The Speed Limit"
+        },
+        {
+          "n": 13,
+          "title": "Drama"
+        },
+        {
+          "n": 14,
+          "title": "Bouncing"
+        }
       ]
     },
     {
@@ -249,18 +654,48 @@
       "license_url": "https://creativecommons.org/licenses/by/4.0/",
       "source": "https://freemusicarchive.org/music/jon-shuemaker/sound-works-volume-2",
       "modifications": "per-track artwork extracted from embedded ID3 APIC frames",
-      "self_hosted_path": "Music/J/Jon Shuemaker/[2025] Sound Works - Volume 2",
+      "self_hosted_path": "Music/J/Jon.Shuemaker/Sound.Works.Volume.2.(2025)",
       "tracks": [
-        { "n": 1,  "title": "Soundwork XI" },
-        { "n": 2,  "title": "Soundwork XII" },
-        { "n": 3,  "title": "Soundwork XIII" },
-        { "n": 4,  "title": "Soundwork XIV" },
-        { "n": 5,  "title": "Soundwork XV" },
-        { "n": 6,  "title": "Soundwork XVI" },
-        { "n": 7,  "title": "Soundwork XVII" },
-        { "n": 8,  "title": "Soundwork XVIII" },
-        { "n": 9,  "title": "Soundwork XIX" },
-        { "n": 10, "title": "Soundwork XX" }
+        {
+          "n": 1,
+          "title": "Soundwork XI"
+        },
+        {
+          "n": 2,
+          "title": "Soundwork XII"
+        },
+        {
+          "n": 3,
+          "title": "Soundwork XIII"
+        },
+        {
+          "n": 4,
+          "title": "Soundwork XIV"
+        },
+        {
+          "n": 5,
+          "title": "Soundwork XV"
+        },
+        {
+          "n": 6,
+          "title": "Soundwork XVI"
+        },
+        {
+          "n": 7,
+          "title": "Soundwork XVII"
+        },
+        {
+          "n": 8,
+          "title": "Soundwork XVIII"
+        },
+        {
+          "n": 9,
+          "title": "Soundwork XIX"
+        },
+        {
+          "n": 10,
+          "title": "Soundwork XX"
+        }
       ]
     }
   ]
